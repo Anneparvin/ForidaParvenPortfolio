@@ -2,99 +2,27 @@
 
 Welcome to my project showcase! This repository highlights my web development projects, demonstrating my skills in building modern, responsive, and user-friendly web applications.
 
-## 📂 Project Structure
-ForidaParvenPortfolio/
-├── app/
-│   ├── _components/
-│   ├── favicon.ico
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-│
-├── components/
-│   ├── custom/
-│   ├── icons/
-│   └── layout/
-│       ├── app-container.tsx
-│       ├── app-footer.tsx
-│       ├── app-header.tsx
-│       ├── app-section.tsx
-│       └── ...
-│
-├── const/
-├── lib/
-├── mock/
-├── public/
-│   └── images/
-│       └── project/
-│
-├── types/
-│
-├── .env.local
-├── .gitignore
-├── .prettierrc
-├── components.json
-├── eslint.config.mjs
-├── LICENSE
-├── next-env.d.ts
-├── next.config.ts
-├── package-lock.json
-├── package.json
-├── postcss.config.mjs
-├── README.md
-├── tailwind.config.ts
-└── tsconfig.json
-```
-
-### 📁 Folder Description
-
-- **`app/`** — Next.js App Router pages, layouts, global styles, and route-specific components.
-- **`components/`** — Reusable UI components, custom components, icons, and layout components.
-- **`const/`** — Project constants and configuration data.
-- **`lib/`** — Utility functions and shared helper logic.
-- **`mock/`** — Mock data used for development and testing.
-- **`public/`** — Static assets such as images, icons, and project screenshots.
-- **`types/`** — TypeScript types and interfaces.
-
-### ⚙️ Configuration Files
-
-- **`package.json`** — Project dependencies and npm scripts.
-- **`next.config.ts`** — Next.js configuration.
-- **`tsconfig.json`** — TypeScript configuration.
-- **`tailwind.config.ts`** — Tailwind CSS configuration.
-- **`postcss.config.mjs`** — PostCSS configuration.
-- **`eslint.config.mjs`** — Code quality and linting rules.
-- **`.prettierrc`** — Code formatting settings.
-- **`.gitignore`** — Files and folders excluded from Git.
-- **`.env.local`** — Local environment variables; do not commit secrets.
-- **`components.json`** — UI component generator configuration.
-- **`LICENSE`** — Project license.
-- **`README.md`** — Project documentation.
-
-
-## 🚀 Getting Started
-
-To run a project locally, clone its repository and install the required dependencies.
-
-```bash
-git clone YOUR_REPOSITORY_URL
-cd YOUR_PROJECT_FOLDER
-npm install
-npm run dev
-```
-
-liveLink [https://forida-parven-portfolio.vercel.app/] |
-Github - https://github.com/Anneparvin/ForidaParvenPortfolio
 
 ## 👩‍💻 About Me
 
 I'm a web developer passionate about building responsive, accessible, and user-friendly web applications. I enjoy learning modern technologies and turning ideas into practical digital experiences.
 
+## 🚀 Getting Started
+
+To run a project locally, clone its repository and install the required dependencies.
+
+git clone YOUR_REPOSITORY_URL
+cd YOUR_PROJECT_FOLDER
+npm install
+npm run dev
+liveLink [https://forida-parven-portfolio.vercel.app/] 
+Github - [https://github.com/Anneparvin/ForidaParvenPortfolio]
+
 ## 📬 Contact
 
-- **Portfolio:** YOUR_PORTFOLIO_URL
-- **GitHub:** YOUR_GITHUB_URL
-- **LinkedIn:** YOUR_LINKEDIN_URL
+- **Portfolio:** https://forida-parven-portfolio.vercel.app/
+- **GitHub:** https://github.com/Anneparvin
+- **LinkedIn:** https://www.linkedin.com/in/forida-parven-anne/
 
 ## 🌟 Featured Projects
 
