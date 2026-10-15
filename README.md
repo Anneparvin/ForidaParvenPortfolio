@@ -83,7 +83,8 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) for a Next.js project, or use the local URL shown in your terminal for a Vite project.
+liveLink [https://forida-parven-portfolio.vercel.app/] |
+Github - https://github.com/Anneparvin/ForidaParvenPortfolio
 
 ## 👩‍💻 About Me
 
