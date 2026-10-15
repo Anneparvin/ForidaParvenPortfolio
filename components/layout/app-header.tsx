@@ -5,6 +5,7 @@ import { MenuIcon } from 'lucide-react'
 import { HEADER_ITEMS } from '@/const'
 import { ThemeToggle } from '../custom/theme-toggle'
 import Image from "next/image";
+import Link from 'next/link'
 
 
 const AppHeader = () => {
@@ -12,15 +13,15 @@ const AppHeader = () => {
   return (
     <header className="py-5 flex items-center justify-between app-container sticky top-0 bg-background  z-50">
       {/* <div className="text-primary font-extrabold text-2xl uppercase"> */}
-      <div>
+     <Link href="/">
           <Image
-         src={'/images/user/mylogo.png'}
+         src={'/images/user/mylogo-removebg-preview.png'}
         alt="My Profile"
-        width={100}
-        height={40}
-          className="h-auto w-28 sm:w-26 md:w-30 object-contain rounded"
+        width={150}
+        height={80}
+      className="w-20 h-auto sm:w-14 md:w-28 lg:w-45 object-contain rounded"
       />
-      </div>
+      </Link>
       <ul className="space-x-5 lg:space-x-10 items-center hidden md:flex">
         {headerList.map((item) => (
           <li

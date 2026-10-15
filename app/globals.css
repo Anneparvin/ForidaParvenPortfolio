@@ -112,6 +112,11 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+  html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -121,10 +126,7 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 40px;
-}
+
 
 @layer utilities {
   .app-container {
@@ -134,4 +136,6 @@ html {
   .social-icon {
     @apply w-8 h-8 hover:text-primary transition duration-300;
   }
+
+
 }

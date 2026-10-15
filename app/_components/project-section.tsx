@@ -46,6 +46,7 @@ const ProjectSection = () => {
               frontImage={project.frontImage}
               backImage={project.backImage}
               title={project.title}
+              liveLink={project.liveLink}
               topics={project.topics}
             />
           ))}

@@ -1,17 +1,22 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 type Props = {
   frontImage?: string
   backImage?: string
   title?: string
   topics?: string[]
+  liveLink?:string
 }
 
-const ProjectCard = ({ frontImage, backImage, title, topics }: Props) => {
+const ProjectCard = ({ frontImage, backImage, title, topics, liveLink }: Props) => {
   return (
-    <Link href={'#'}>
+   <a
+      href={liveLink || '#'}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div className="w-full">
         <div className="bg-primary/20 h-[370px] relative rounded-xl overflow-hidden">
           <div className="absolute bottom-0 left-4 h-[90%] w-[80%] z-10 overflow-hidden">
@@ -44,8 +49,10 @@ const ProjectCard = ({ frontImage, backImage, title, topics }: Props) => {
         </div>
 
         <h4 className="text-xl font-extrabold mt-1 line-clamp-2">{title}</h4>
+        {/* <h6 className="text-sm font-bold font green underline mt-1 line-clamp-2">Live 
+          : {liveLink}</h6> */}
       </div>
-    </Link>
+    </a>
   )
 }
 

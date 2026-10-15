@@ -81,22 +81,43 @@ export const SERVICES: Service[] = [
 
 export const PROJECTS: ProjectItem[] = [
   {
-    frontImage: '/images/project/project-sample-1-1.png',
-    backImage: '/images/project/project-sample-1-2.png',
-    title: 'Booking Dashboard',
-    topics: ['React', 'Next.js', 'TypeScript', 'Dashboard System', 'Tailwind'],
+    frontImage: '/images/project/feletrip-com.png',
+    backImage: '/images/project/feletrip backpage.png',
+    title: 'Hotel Booking Website',
+    liveLink: 'https://www.feletrip.com/',
+     topics: [
+      'Travel Website',
+      'Next.js',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+    ],
   },
   {
-    frontImage: '/images/project/project-sample-2-1.png',
-    backImage: '/images/project/project-sample-2-2.png',
-    title: 'E-commerce API',
-    topics: ['Backend System', 'Node.js', 'NestJS', 'PostgreSQL', 'Docker'],
+    frontImage: '/images/project/uparzo.com.png',
+    backImage: '/images/project/uparzo backpage.png',
+    title: 'E-commerce Website',
+     liveLink:'https://uparzo.com/',
+     topics: [
+      'Web Application',
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Tailwind CSS',
+    ],
   },
   {
-    frontImage: '/images/project/project-sample-3-1.png',
-    backImage: '/images/project/project-sample-3-2.png',
-    title: 'Realtime Chat App',
-    topics: ['Next.js', 'React', 'TypeScript', 'Redis', 'WebSocket'],
+    frontImage: '/images/project/bikeBD client frontside.png',
+    backImage: '/images/project/bikeBD client backside.png',
+    title: 'BikeBD Projects',
+    liveLink:'https://bikebd-client-nine.vercel.app/',
+    topics:[
+  'React',
+  'TypeScript',
+  'Vite',
+  'Tailwind CSS',
+  'REST API',
+],
   },
 ]
 

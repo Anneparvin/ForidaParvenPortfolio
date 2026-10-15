@@ -12,6 +12,7 @@ export type ProjectItem = {
   frontImage?: string
   backImage?: string
   title?: string
+  liveLink: string
   topics?: string[]
 }
 

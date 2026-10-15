@@ -18,22 +18,25 @@ const TestimonialSection = () => {
   const testimonialData = TESTIMONIALS
   return (
     <AppSection id="testimonials">
-      <div className="w-full md:w-1/2 mx-auto">
+      <div className="w-full max-w-3xl md:w-1/2 mx-auto px-4">
         <SectionTitle name="Testimonials" />
         <SectionDescription
           content={`Hear what developers, designers, and collaborators say about my work, creativity, and dedication to building modern, responsive, and user-friendly web experiences.`}
         />
       </div>
-      <div className="my-10">
+     <div className="my-8 sm:my-10 w-full px-2 sm:px-4">
         <Carousel
           opts={{
             align: 'center',
           }}
-          className="w-full md:w-[95%] mx-auto"
+          className="w-full max-w-6xl mx-auto"
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-3 sm:-ml-4">
             {testimonialData.map((testimonial) => (
-              <CarouselItem className="basis-3/4 md:basis-1/2" key={testimonial.name}>
+           <CarouselItem
+            key={testimonial.name}
+            className="pl-3 sm:pl-4 basis-[97%] sm:basis-3/4 md:basis-1/2"
+          >
                 <TestimonialCard
                   content={testimonial.content}
                   name={testimonial.name}
