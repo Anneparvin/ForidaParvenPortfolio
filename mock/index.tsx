@@ -85,7 +85,8 @@ export const PROJECTS: ProjectItem[] = [
     backImage: '/images/project/feletrip backpage.png',
     title: 'Hotel Booking Website',
     liveLink: 'https://www.feletrip.com/',
-     topics: [
+    category: 'Next.js',
+    topics: [
       'Travel Website',
       'Next.js',
       'React',
@@ -98,6 +99,7 @@ export const PROJECTS: ProjectItem[] = [
     backImage: '/images/project/uparzo backpage.png',
     title: 'E-commerce Website',
      liveLink:'https://uparzo.com/',
+     category: 'Next.js',
      topics: [
       'Web Application',
       'React',
@@ -111,6 +113,7 @@ export const PROJECTS: ProjectItem[] = [
     backImage: '/images/project/bikeBD client backside.png',
     title: 'BikeBD Projects',
     liveLink:'https://bikebd-client-nine.vercel.app/',
+    category: 'Next.js',
     topics:[
   'React',
   'TypeScript',
@@ -119,6 +122,35 @@ export const PROJECTS: ProjectItem[] = [
   'REST API',
 ],
   },
+    {
+     frontImage: '/images/project/toymaster frontside.png',
+    backImage: '/images/project/toymaster backside.png',
+    title: 'Musical Toy Website',
+    liveLink: 'https://toymaster-1eeeb.web.app/',
+    category: 'React',
+    topics: [
+      'Musial Website',
+      'MongoDB',
+      'React',
+      'Express',
+      'Tailwind CSS',
+    ],
+  },
+  {
+     frontImage: '/images/project/chefcrunch frontside.png',
+    backImage: '/images/project/chef crunch backside.png',
+    title: 'ChefCrunch Website',
+    liveLink: 'https://chef-krunch.web.app/',
+    category: 'React',
+    topics: [
+      'Web Application',
+      'React',
+      'CRUD',
+      'MongoDB',
+      'Tailwind CSS',
+    ],
+  },
+ 
 ]
 
 export const TESTIMONIALS: Testimonial[] = [

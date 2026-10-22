@@ -13,6 +13,7 @@ export type ProjectItem = {
   backImage?: string
   title?: string
   liveLink: string
+  category: string,
   topics?: string[]
 }
 

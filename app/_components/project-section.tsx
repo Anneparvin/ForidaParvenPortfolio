@@ -1,4 +1,67 @@
+// 'use client'
+// import ProjectCard from '@/components/custom/project-card'
+// import SectionDescription from '@/components/custom/section-description'
+// import SectionTitle from '@/components/custom/section-title'
+// import AppSection from '@/components/layout/app-section'
+// import { Button } from '@/components/ui/button'
+// import { PROJECTS } from '@/mock'
+// import React, { useState } from 'react'
+
+// // type Props = {}
+
+// const ProjectSection = () => {
+//   const projectCategories = ['All', 'React', 'Next.js', 'Backend System', 'Dashboard System']
+//   const projectData = PROJECTS
+//   const [selectedCategory, setSelectedCategory] = useState('All')
+
+//   return (
+//     <AppSection id="projects">
+//       <div className="w-full md:w-1/2 mx-auto">
+//         <SectionTitle name="My Projects" />
+//         <SectionDescription
+//           content={`I build modern, responsive web applications with React, Next.js, TypeScript, and Tailwind CSS, focusing on clean design, reusable components, smooth functionality, and excellent user experience.`}
+//         />
+//       </div>
+//       <div>
+//         <div className="my-10 flex flex-wrap justify-start md:justify-center space-x-3 space-y-3">
+//           {projectCategories.map((category) => (
+//             <Button
+//               key={category}
+//               variant="outline"
+//               className={
+//                 category === selectedCategory
+//                   ? 'text-background !bg-primary hover:text-background hover:bg-orange-600 cursor-pointer'
+//                   : 'cursor-pointer'
+//               }
+//               onClick={() => setSelectedCategory(category)}
+//             >
+//               {category}
+//             </Button>
+//           ))}
+//         </div>
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-5">
+//           {projectData.map((project) => (
+//             <ProjectCard
+//               key={project.title}
+//               frontImage={project.frontImage}
+//               backImage={project.backImage}
+//               title={project.title}
+//               liveLink={project.liveLink}
+//               topics={project.topics}
+//             />
+//           ))}
+//         </div>
+//       </div>
+//     </AppSection>
+//   )
+// }
+
+// export default ProjectSection
+
+
+
 'use client'
+
 import ProjectCard from '@/components/custom/project-card'
 import SectionDescription from '@/components/custom/section-description'
 import SectionTitle from '@/components/custom/section-title'
@@ -7,23 +70,35 @@ import { Button } from '@/components/ui/button'
 import { PROJECTS } from '@/mock'
 import React, { useState } from 'react'
 
-// type Props = {}
-
 const ProjectSection = () => {
-  const projectCategories = ['All', 'React', 'Next.js', 'Backend System', 'Dashboard System']
-  const projectData = PROJECTS
+  const projectCategories = [
+    'All',
+    'React',
+    'Next.js',
+    'Backend System',
+    'Dashboard System',
+  ]
+
   const [selectedCategory, setSelectedCategory] = useState('All')
+
+  const projectData =
+    selectedCategory === 'All'
+      ? PROJECTS
+      : PROJECTS.filter(
+          (project) => project.category === selectedCategory
+        )
 
   return (
     <AppSection id="projects">
       <div className="w-full md:w-1/2 mx-auto">
         <SectionTitle name="My Projects" />
         <SectionDescription
-          content={`I build modern, responsive web applications with React, Next.js, TypeScript, and Tailwind CSS, focusing on clean design, reusable components, smooth functionality, and excellent user experience.`}
+          content="I build modern, responsive web applications with React, Next.js, TypeScript, and Tailwind CSS, focusing on clean design, reusable components, smooth functionality, and excellent user experience."
         />
       </div>
+
       <div>
-        <div className="my-10 flex flex-wrap justify-start md:justify-center space-x-3 space-y-3">
+        <div className="my-10 flex flex-wrap justify-start md:justify-center gap-3">
           {projectCategories.map((category) => (
             <Button
               key={category}
@@ -39,6 +114,7 @@ const ProjectSection = () => {
             </Button>
           ))}
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 py-5">
           {projectData.map((project) => (
             <ProjectCard
@@ -57,3 +133,4 @@ const ProjectSection = () => {
 }
 
 export default ProjectSection
+

@@ -8,9 +8,10 @@ type Props = {
   title?: string
   topics?: string[]
   liveLink?:string
+  category?: string,
 }
 
-const ProjectCard = ({ frontImage, backImage, title, topics, liveLink }: Props) => {
+const ProjectCard = ({ frontImage, backImage, title, topics, liveLink, category }: Props) => {
   return (
    <a
       href={liveLink || '#'}
@@ -40,6 +41,7 @@ const ProjectCard = ({ frontImage, backImage, title, topics, liveLink }: Props) 
             </div>
           </div>
         </div>
+        <p>{category}</p>
         <div className="flex flex-wrap gap-2 md:gap-4 mt-4">
           {topics?.map((topic) => (
             <p className="text-sm text-primary" key={topic}>
