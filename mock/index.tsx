@@ -150,6 +150,21 @@ export const PROJECTS: ProjectItem[] = [
       'Tailwind CSS',
     ],
   },
+  {
+  frontImage: '/images/project/dashboard backside.png',
+  backImage: '/images/project/dashboard frontside.png',
+  title: 'Project Review Dashboard',
+  liveLink: 'https://dashboard-backend-repo-ndpp-iota.vercel.app/',
+  category: 'Dashboard System',
+  topics: [
+    'Full Stack',
+    'Next.js',
+    'TypeScript',
+    'Tailwind CSS',
+    'shadcn/ui',
+  
+  ],
+},
  
 ]
 
