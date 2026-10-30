@@ -151,10 +151,10 @@ export const PROJECTS: ProjectItem[] = [
     ],
   },
   {
-  frontImage: '/images/project/dashboard backside.png',
-  backImage: '/images/project/dashboard frontside.png',
+  backImage: '/images/project/dashboard backside.png',
+  frontImage: '/images/project/dashboard frontside.png',
   title: 'Project Review Dashboard',
-  liveLink: 'https://dashboard-backend-repo-ndpp-iota.vercel.app/',
+  liveLink: 'https://dashboard-backend-repo-ndpp-iota.vercel.app/login',
   category: 'Dashboard System',
   topics: [
     'Full Stack',
@@ -164,7 +164,7 @@ export const PROJECTS: ProjectItem[] = [
     'shadcn/ui',
   
   ],
-},
+}
  
 ]
 
